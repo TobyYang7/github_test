@@ -16,3 +16,5 @@ def quick_sort(arr):
     return quick_sort(less_arr) + equal_arr + quick_sort(greater_arr)
 
 print(quick_sort([1, 3, 2, 5, 4]))
+# [1, 2, 3, 4, 5]
+print("test")
