@@ -18,3 +18,4 @@ response = openai.Completion.create(
 
 # Print the generated text
 print(response.choices[0].text)
+# FIX
