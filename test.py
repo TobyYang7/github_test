@@ -24,3 +24,5 @@ is_copilot = True
 ic(quick_sort([1, 3, 6, 2, 4]))
 ic(name, age, is_copilot)
 ic(test_val)
+
+print('test value')
