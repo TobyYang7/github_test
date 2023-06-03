@@ -18,6 +18,9 @@ def quick_sort(arr):
 
 name = "GitHub Copilot"
 age = 2
+test_val = 'test'
 is_copilot = True
+
 ic(quick_sort([1, 3, 6, 2, 4]))
 ic(name, age, is_copilot)
+ic(test_val)
