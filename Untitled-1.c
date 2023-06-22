@@ -1,6 +1,8 @@
 #include <stdio.h>
 int main()
 {
-    printf("Hello, World!");
+    int *p, x; x = 3; p = &x;
+    printf("p points to %d\n", *p);
+
     return 0;
 }
