@@ -7,7 +7,7 @@ int main()
     x[2] = 971;
     x[3] = 1678;
     unsigned char *y = (unsigned char *)x;
-    // we'll run some print statements here
+    printf("%s",(unsigned char *)x);
     printf("%d\n", *y);
     return 0;
 }
