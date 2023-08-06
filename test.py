@@ -1,33 +1,11 @@
-# from icecream import ic
+count = 0
+for x1 in range(0,4):
+    for x2 in range(1,4):
+        for x3 in range(15,22):
+            for x4 in range(0,22):
+                for x5 in range(0,22):
+                    sum = x1+x2+x3+x4+x5
+                    if sum == 21:
+                        count += 1
 
-
-# def quick_sort(arr):
-#     if len(arr) <= 1:
-#         return arr
-#     pivot = arr[len(arr) // 2]
-#     less_arr, equal_arr, greater_arr = [], [], []
-#     for num in arr:
-#         if num < pivot:
-#             less_arr.append(num)
-#         elif num > pivot:
-#             greater_arr.append(num)
-#         else:
-#             equal_arr.append(num)
-#     return quick_sort(less_arr) + equal_arr + quick_sort(greater_arr)
-
-
-# name = "GitHub Copilot"
-# age = 2
-# test_val = 'test'
-# is_copilot = True
-
-# ic(quick_sort([1, 3, 6, 2, 4]))
-# ic(name, age, is_copilot)
-# ic(test_val)
-
-# print('test value')
-
-# 创建一个字典
-my_dict = {"apple": 1, "banana": 2, "orange": 3}
-for i in my_dict:
-    print(my_dict[i])
+print(count)
