@@ -1,11 +1,27 @@
-count = 0
-for x1 in range(0,4):
-    for x2 in range(1,4):
-        for x3 in range(15,22):
-            for x4 in range(0,22):
-                for x5 in range(0,22):
-                    sum = x1+x2+x3+x4+x5
-                    if sum == 21:
-                        count += 1
+# Definition for singly-linked list.
+class ListNode(object):
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
 
-print(count)
+
+class Solution(object):
+    def addtwoNumbers(self, l1, l2):
+        carry = 0
+        add_bit = 0
+        sum = l1.val+l2.val+carry
+        res = ListNode()
+
+        while (l1.next and l2.next):
+            if (sum >= 10):
+                add_bit = sum-10
+                carry = 1
+            else:
+                add_bit = sum
+                carry = 1
+            res.val = sum
+            res = res.next
+            l1 = l1.next
+            l2 = l2.next
+
+        return res
