@@ -2,7 +2,7 @@ import interpreter
 import threading
 import time
 import os
-os.environ['OPENAI_API_KEY'] = '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'
+os.environ['OPENAI_API_KEY'] = 'sk-KrIblhDhlEYoz7QBtFXrJoLFNbN1E0ptQGvloxwe4j1L78l0'
 interpreter.model = "gpt-3.5-turbo"
 
 
@@ -19,3 +19,4 @@ while True:
 
     while t.is_alive():
         time.sleep(0.1)
+        print("Waiting for response...")
